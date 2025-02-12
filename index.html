@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.png">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!--
+          - custom js link
+        -->
+  <script src="./js/script.js" defer></script>
+
+  <!--
+          - ionicon link
+        -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/avatar.jpeg" alt="avatar" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="name">ПЛЮЩ ВЛАДИСЛАВ</h1>
+
+          <p class="title">СВАРЩИК</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:co4ckowoi.v@gmail.com" class="contact-link">vlados@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Телефон</p>
+
+              <a href="tel:+380973641338" class="contact-link">+49 (077) 77-77-777</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Локация</p>
+
+              <address>Берлин, Германия</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" target="_blank" class="social-link">
+              <svg class="social-link" width="30px" height="30px">
+                <use href="./assets/images/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" target="_blank" class="social-link">
+              <svg class="social-link" width="30px" height="30px">
+                <use href="./assets/images/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" target="_blank" class="social-link">
+              <svg class="social-link" width="30px" height="30px">
+                <use href="./assets/images/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Обо мне</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Портфолио</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Контакты</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="обо мне">
+
+        <header>
+          <h2 class="h2 article-title">Обо мне</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Опытный сварщик с глубокими знаниями технологий сварки и обработки металлов. Обладаю навыками работы с
+            различными типами
+            сварки, включая ручную дуговую (MMA), полуавтоматическую (MIG/MAG) и аргонодуговую (TIG). Владею чтением
+            технической
+            документации и чертежей, что позволяет точно выполнять работы в соответствии с требованиями заказчика.
+            Ответственен,
+            внимателен к деталям и всегда соблюдаю технику безопасности на производстве.
+          </p>
+
+          <p>
+            Имею опыт работы на строительных объектах, производственных предприятиях и в судостроении. Выполнял сварку
+            металлических
+            конструкций, трубопроводов, корпусных деталей и сложных узлов. Работал с черными и цветными металлами,
+            включая
+            нержавеющую сталь и алюминий. Готов к интенсивной работе, командировкам и работе в сложных условиях.
+            Стремлюсь к
+            профессиональному развитию и совершенствованию навыков.
+          </p>
+        </section>
+
+
+        <!--
+          - skills
+        -->
+
+        <section class="skills">
+
+
+          <div class="skills-wrapper">
+            <h3 class="h3 skills-title">ТЕХНИЧЕСКИЕ НАВЫКИ </h3>
+            <ul class="skills-list">
+              <li class="skills-item">
+                <div class="skills-content-box">
+                  <h4 class="h4 skills-item-title">Владение разными видами сварки – MMA (ручная дуговая), MIG/MAG
+                    (полуавтоматическая), TIG (аргонодуговая).</h4>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="skills-content-box">
+                  <h4 class="h4 skills-item-title">Владение разными видами сварки – MMA (ручная дуговая), MIG/MAG
+                    (полуавтоматическая), TIG (аргонодуговая).</h4>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="skills-content-box">
+                  <h4 class="h4 skills-item-title">Чтение чертежей и технической документации – умение работать по
+                    схемам и проектам.</h4>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="skills-content-box">
+                  <h4 class="h4 skills-item-title">Работа с различными материалами – сталь, нержавейка, алюминий, медь.
+                  </h4>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="skills-content-box">
+                  <h4 class="h4 skills-item-title">Контроль качества сварных швов – знание дефектов и методов их
+                    устранения.
+                  </h4>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="skills-content-box">
+                  <h4 class="h4 skills-item-title">Работа с газовым и плазменным резаком – резка, разделка кромок,
+                    зачистка.</h4>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="skills-content-box">
+                  <h4 class="h4 skills-item-title">Соблюдение техники безопасности – знание норм охраны труда и работы с
+                    оборудованием.</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skills-wrapper">
+            <h3 class="h3 skills-title">СОФТ СКИЛЫ</h3>
+            <ul class="skills-list">
+              <li class="skills-item">
+                <div class="skills-content-box">
+                  <h4 class="h4 skills-item-title">Внимательность к деталям – контроль качества сварных соединений.</h4>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="skills-content-box">
+                  <h4 class="h4 skills-item-title">Ответственность – выполнение работы в срок и в соответствии с
+                    требованиями.</h4>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="skills-content-box">
+                  <h4 class="h4 skills-item-title">Физическая выносливость – способность работать в сложных условиях.
+                  </h4>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="skills-content-box">
+                  <h4 class="h4 skills-item-title">Стрессоустойчивость – умение работать в напряженной обстановке.</h4>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="skills-content-box">
+                  <h4 class="h4 skills-item-title">Командная работа – эффективное взаимодействие с коллегами и
+                    инженерами.</h4>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="skills-content-box">
+                  <h4 class="h4 skills-item-title">Желание обучаться – стремление к повышению квалификации и освоению
+                    новых технологий.</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+
+        </section>
+        <!--
+          - certificates
+        -->
+
+        <section class="certificates">
+
+          <h3 class="h3 certificates-title">Сертификаты</h3>
+
+          <ul class="certificates-list has-scrollbar">
+
+            <li class="certificates-item">
+              <div class="content-card" data-modal-item>
+
+                <figure class="certificates-img-box">
+
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/certificate.jpg" alt="Diploma Frontend Developer(React)" width="150"
+                    data-img-src>
+                  <a class="certificates-card-title" data-certificates-title href="#"></a>
+                </figure>
+
+              </div>
+            </li>
+
+            <li class="certificates-item">
+              <div class="content-card" data-modal-item>
+
+                <figure class="certificates-img-box">
+
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/certificate.jpg" alt="Certificate HTML&CSS Starter" width="150"
+                    data-img-src>
+                  <a class="certificates-card-title" data-certificates-title href="#"></a>
+                </figure>
+
+              </div>
+            </li>
+            <li class="certificates-item">
+              <div class="content-card" data-modal-item>
+
+                <figure class="certificates-img-box">
+
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/certificate.jpg" alt="Certificate HTML&CSS Advanced" width="150"
+                    data-img-src>
+                  <a class="certificates-card-title" data-certificates-title href="#"></a>
+                </figure>
+
+              </div>
+            </li>
+            <li class="certificates-item">
+              <div class="content-card" data-modal-item>
+
+                <figure class="certificates-img-box">
+
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/certificate.jpg" alt="Certificate JavaScript Starter" width="150"
+                    data-img-src>
+                  <a class="certificates-card-title" data-certificates-title href="#"></a>
+                </figure>
+
+              </div>
+            </li>
+            <li class="certificates-item">
+              <div class="content-card" data-modal-item>
+
+                <figure class="certificates-img-box">
+
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/certificate.jpg" alt="Certificate JavaScript Essential" width="150"
+                    data-img-src>
+                  <a class="certificates-card-title" data-certificates-title href="#"></a>
+                </figure>
+
+              </div>
+            </li>
+            <li class="certificates-item">
+              <div class="content-card" data-modal-item>
+
+                <figure class="certificates-img-box">
+
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/certificate.jpg" alt="Certificate React Essential" width="150" data-img-src>
+                  <a class="certificates-card-title" data-certificates-title href="#"></a>
+                </figure>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!--
+          - certificates modal
+        -->
+
+      </article>
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="портфолио">
+
+        <header>
+          <h2 class="h2 article-title">Портфолио</h2>
+        </header>
+
+        <section class="swiper-section">
+          <div class="swiper-wrapper">
+            <div id="projectSwiper" class="swiper">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="swiper-img">
+                    <img src="./assets/images/Project10.webp" alt="Project">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-img">
+                    <img src="./assets/images/Project7.webp" alt="Project">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-img">
+                    <img src="./assets/images/Project9.webp" alt="Project">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="projects">
+
+          <h2>Мои работы</h2>
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>Все</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>MMA</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>MIG</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>Все</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>MMA</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>MIG</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="mig">
+              <span data-modal-item>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Project1.webp" data-img-src alt="project 1" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Заголовок</h3>
+
+                <p class="project-category">подзаголовок</p>
+
+              </span>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="mig">
+              <span data-modal-item>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Project2.webp" alt="project 2" data-img-src loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Заголовок</h3>
+
+                <p class="project-category">подзаголовок</p>
+
+              </span>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="mma">
+              <span data-modal-item>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Project3.webp" alt="project 3" data-img-src loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Заголовок</h3>
+
+                <p class="project-category">подзаголовок</p>
+
+              </span>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="mig">
+              <span data-modal-item>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Project4.webp" alt="project 4" data-img-src loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Заголовок</h3>
+
+                <p class="project-category">подзаголовок</p>
+
+              </span>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="mma">
+              <span data-modal-item>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Project5.webp" alt="project 5" data-img-src loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Заголовок</h3>
+
+                <p class="project-category">подзаголовок</p>
+
+              </span>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="mma">
+              <span data-modal-item>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Project6.webp" alt="project 6" data-img-src loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Заголовок</h3>
+
+                <p class="project-category">подзаголовок</p>
+
+              </span>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="mma">
+              <span data-modal-item>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Project7.webp" alt="project 7" data-img-src loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Заголовок</h3>
+
+                <p class="project-category">подзаголовок</p>
+
+              </span>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="mig">
+              <span data-modal-item>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Project8.webp" alt="project 8" data-img-src loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Заголовок</h3>
+
+                <p class="project-category">подзаголовок</p>
+
+              </span>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="mig">
+              <span data-modal-item>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Project9.webp" alt="project 9" data-img-src loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Заголовок</h3>
+
+                <p class="project-category">подзаголовок</p>
+
+              </span>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="mig">
+              <span data-modal-item>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Project10.webp" alt="project 10" data-img-src loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Заголовок</h3>
+
+                <p class="project-category">подзаголовок</p>
+
+              </span>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="контакты">
+
+        <header>
+          <h2 class="h2 article-title">Контакты</h2>
+        </header>
+
+
+
+        <section class="mapbox" data-mapbox>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198035.89084409492!2d13.385423684991244!3d52.52148386089436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2z0JHQtdGA0LvQuNC9LCDQk9C10YDQvNCw0L3QuNGP!5e0!3m2!1sru!2sua!4v1739371460616!5m2!1sru!2sua"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="contact-form">
+
+
+          <p class="contact-text">Если вам нужны профессиональные услуги, я всегда открыт для сотрудничества. Свяжитесь
+            со мной удобным для
+            вас способом:</p>
+
+          <address class="contact-address">
+            <ul>
+              <li><strong>Email:</strong> <a href="mailto:example@email.com">example@email.com</a></li>
+              <li><strong>Телефон:</strong> <a href="tel:+490XXXXXXXXX">+49 (XXX) XXX-XX-XX</a></li>
+              <li><strong style="margin-right: 10px;">Город:</strong>Берлин</li>
+            </ul>
+          </address>
+
+          <section class="contact-messengers">
+            <h3>Мессенджеры:</h3>
+            <ul>
+              <li><strong>Telegram:</strong> <a href="https://t.me/yourusername" target="_blank">@yourusername</a></li>
+              <li><strong>WhatsApp:</strong> <a href="https://wa.me/yourphonenumber" target="_blank">Написать в
+                  WhatsApp</a></li>
+              <li><strong>Viber:</strong> <a href="viber://chat?number=%2Byourphonenumber">Чат в Viber</a></li>
+            </ul>
+          </section>
+
+
+        </section>
+
+      </article>
+
+    </div>
+
+    <div class="modal-container" data-modal-container>
+
+      <div class="overlay" data-overlay></div>
+
+      <section class="certificates-modal">
+
+        <button class="modal-close-btn" data-modal-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <div class="modal-img-wrapper">
+          <figure class="modal-avatar-box">
+            <span class="modal-title" data-modal-link target="_blank">
+              <img class="modal-img" src="./assets/images/certificate.jpg" alt="Certificate" data-modal-img>
+            </span>
+          </figure>
+        </div>
+
+      </section>
+
+    </div>
+
+  </main>
+
+
+
+
+</body>
+
+</html>
