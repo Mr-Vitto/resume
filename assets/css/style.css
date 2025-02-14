@@ -772,6 +772,7 @@ main {
 }
 
 
+
 /*-----------------------------------*\
   #PORTFOLIO
 \*-----------------------------------*/
@@ -1882,5 +1883,22 @@ textarea.form-input::-webkit-resizer {
   .projects h2 {
     font-size: 30px;
     color: #fff !important;
+  }
+}
+
+@media (max-width: 525px) {
+  .certificates-modal {
+    max-width: 420px;
+    overflow: hidden;
+  }
+
+  .certificates-modal .modal-avatar-box {
+    width: 100%;
+  }
+
+  .certificates-modal img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 }
